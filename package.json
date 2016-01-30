@@ -1,0 +1,20 @@
+{
+  "name": "alarm",
+  "version": "1.0.0",
+  "description": "Create alarm from your shell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alarm",
+    "npm",
+    "javascript",
+    "shell"
+  ],
+  "author": "Navjot Ahuja <navjotahuja92@gmail.com>",
+  "license": "ISC",
+  "bin": {
+    "alarm": "index.js"
+  }
+}
