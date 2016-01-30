@@ -1,5 +1,5 @@
 {
-  "name": "alarm",
+  "name": "alarm-notify",
   "version": "1.0.0",
   "description": "Create alarm from your shell",
   "main": "index.js",
