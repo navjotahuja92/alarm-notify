@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+const COMMAND_NAME = 'alarm-notify';
 var exec = require('child_process').exec;
 
 var allowedMinutesArgs = ["min", "minutes"];
@@ -23,8 +24,8 @@ for(key in args){
 
 function printExampleUsage(){
 	console.log("Example Usage:");
-	console.log("alarm min=5 msg=\"Time Over\"");
-	console.log("alarm minutes=5 message=\"Time Over\"");
+	console.log(COMMAND_NAME + " -min=5 -msg=\"Time Over\"");
+	console.log(COMMAND_NAME + " -minutes=5 -message=\"Time Over\"");
 }
 
 if(!minutes){
@@ -41,5 +42,4 @@ if(!message){
 
 minutes = minutes * 60;
 var command = "(sleep " + minutes + "; notify-send \"" + message + "\") &";
-
 exec(command);

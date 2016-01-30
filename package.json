@@ -15,6 +15,6 @@
   "author": "Navjot Ahuja <navjotahuja92@gmail.com>",
   "license": "ISC",
   "bin": {
-    "alarm": "index.js"
+    "alarm-notify": "index.js"
   }
 }
